@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="match-detail">
+    <h2>{{ match.home_team.name }} vs {{ match.away_team.name }}</h2>
+    <p><strong>Date:</strong> {{ match.match_date|date:"Y-m-d H:i" }}</p>
+    <p><strong>Status:</strong> {{ match.status }}</p>
+    
+    {% if match.home_score is not None and match.away_score is not None %}
+    <p><strong>Score:</strong> {{ match.home_team.name }} {{ match.home_score }} - {{ match.away_score }} {{ match.away_team.name }}</p>
+    {% endif %}
+    
+    <div class="match-links">
+        <h3>Watch Links:</h3>
+        <ul>
+            {% for link in match.watch_links.all %}
+            <li><a href="{{ link.url }}" target="_blank">{{ link.description }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="match-description">
+        <h3>Description:</h3>
+        <p>{{ match.description.description }}</p>
+    </div>
+</div>
+{% endblock %}

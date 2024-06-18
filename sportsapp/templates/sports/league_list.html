@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="league-list">
+    <h2>Top Leagues</h2>
+    <ul>
+        {% for league in leagues %}
+        <li>
+            <a href="{% url 'league_matches' league.slug %}">
+                <img src="{{ league.logo_url }}" alt="{{ league.name }} logo">
+                {{ league.name }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

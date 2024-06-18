@@ -1,0 +1,172 @@
+/* style.css */
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* dark background */
+    color: #fff; /* white text */
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #444; /* dark gray background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #fff; /* white text */
+  }
+  
+  /* Container Styles */
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #444; /* dark gray background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* League List Styles */
+  
+  .league-list {
+    padding: 20px;
+  }
+  
+  .league-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  .league-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .league-list li {
+    margin-bottom: 10px;
+  }
+  
+  .league-list a {
+    color: #fff; /* white text */
+    text-decoration: none;
+  }
+  
+  .league-list a:hover {
+    color: #ccc; /* light gray text */
+  }
+  
+  .league-list img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+  
+  /* League Matches Styles */
+  
+  .league-matches {
+    padding: 20px;
+  }
+  
+  .league-matches h2 {
+    margin-bottom: 10px;
+  }
+  
+  .match-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .match-list li {
+    margin-bottom: 10px;
+  }
+  
+  .match-list a {
+    color: #fff; /* white text */
+    text-decoration: none;
+  }
+  
+  .match-list a:hover {
+    color: #ccc; /* light gray text */
+  }
+  
+  .match-list img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+  
+  .live-indicator {
+    background-color: #ff0000; /* red color */
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  /* Match Detail Styles */
+  
+  .match-detail {
+    padding: 20px;
+  }
+  
+  .match-detail h2 {
+    margin-bottom: 10px;
+  }
+  
+  .match-detail p {
+    margin-bottom: 10px;
+  }
+  
+  .match-links {
+    margin-top: 20px;
+  }
+  
+  .match-links h3 {
+    margin-bottom: 10px;
+  }
+  
+  .match-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .match-links li {
+    margin-bottom: 10px;
+  }
+  
+  .match-links a {
+    color: #fff; /* white text */
+    text-decoration: none;
+  }
+  
+  .match-links a:hover {
+    color: #ccc; /* light gray text */
+  }
+  
+  .match-description {
+    margin-top: 20px;
+  }
+  
+  .match-description h3 {
+    margin-bottom: 10px;
+  }
+  
+  .match-description p {
+    margin-bottom: 10px;
+  }

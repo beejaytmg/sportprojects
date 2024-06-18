@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="league-matches">
+    <h2>{{ league.name }} Matches</h2>
+    <ul class="match-list">
+        {% for match in matches %}
+        <li>
+            <a href="{% url 'match_detail' match.slug %}">
+                <img src="{{ match.home_team.logo_url }}" alt="{{ match.home_team.name}} logo"> {{ match.home_team.name }} vs <img src="{{ match.away_team.logo_url }}" alt="{{ match.away_team.name}} logo">{{ match.away_team.name }} 
+                on {{ match.match_date|date:"Y-m-d H:i" }} - {{ match.status }}
+            </a>
+            {% if match.status == 'Live' %}
+            <span class="live-indicator">Live</span>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
