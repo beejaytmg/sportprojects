@@ -30,8 +30,9 @@ CSRF_TRUSTED_ORIGINS = [
     'https://blogusingck-production.up.railway.app',
     'https://bijayakumartamang.com.np',
     'https://sportprojects-production.up.railway.app/',
+    'https://birbahadhurtamang.com.np',
 ]
-ALLOWED_HOSTS = ['sportprojects-production.up.railway.app','127.0.0.1', ]
+ALLOWED_HOSTS = ['sportprojects-production.up.railway.app','127.0.0.1', 'birbahadhurtamang.com.np']
 # Application definition
 
 INSTALLED_APPS = [
