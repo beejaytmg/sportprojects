@@ -29,6 +29,7 @@ DEBUG = True
 CSRF_TRUSTED_ORIGINS = [
     'https://blogusingck-production.up.railway.app',
     'https://bijayakumartamang.com.np',
+    'https://sportprojects-production.up.railway.app/',
 ]
 ALLOWED_HOSTS = ["*"]
 # Application definition
