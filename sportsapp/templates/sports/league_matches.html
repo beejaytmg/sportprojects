@@ -6,7 +6,6 @@
     <ul class="match-list">
         {% for match in matches %}
         <li>
-            <a href="{% url 'match_detail' match.slug %}">
             <div class="match-info">
                 <div class="team home-team">
                     <img src="{{ match.home_team.logo_url }}" alt="{{ match.home_team.name}} logo">
@@ -19,14 +18,14 @@
                 </div>
             </div>
             <div class="match-details">
-                
+                <a href="{% url 'match_detail' match.slug %}">
+                    watch now >
                     {{ match.match_date|date:"H:i" }}
-                
+                </a>
                 {% if match.status == 'Live' %}
                 <span class="live-indicator">Live</span>
                 {% endif %}
             </div>
-        </a>
         </li>
         {% endfor %}
     </ul>
