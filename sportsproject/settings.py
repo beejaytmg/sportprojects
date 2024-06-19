@@ -27,12 +27,10 @@ SECRET_KEY = 'django-insecure-g*$*^3b!2r+2ic-s^qd_7cu@awws!!8)s!bsvp=m&r)33t+@21
 DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://blogusingck-production.up.railway.app',
-    'https://bijayakumartamang.com.np',
     'https://sportprojects-production.up.railway.app/',
     'https://birbahadhurtamang.com.np',
 ]
-ALLOWED_HOSTS = ['sportprojects-production.up.railway.app','127.0.0.1', 'birbahadhurtamang.com.np']
+ALLOWED_HOSTS = ['sportprojects-production.up.railway.app', '127.0.0.1', 'birbahadhurtamang.com.np']
 # Application definition
 
 INSTALLED_APPS = [
