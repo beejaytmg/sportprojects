@@ -156,28 +156,6 @@ header::before {
   margin-right: 10px;
 }
 
-
-
-@keyframes lineAnimation {
-  0% {
-      width: 0;
-  }
-  100% {
-      width: 5px;
-  }
-}
-
-.match-list li a {
-  display: flex;
-  align-items: center;
-}
-
-.match-list li img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
 .live-indicator {
   background-color: #ff5722;
   color: #fff;
