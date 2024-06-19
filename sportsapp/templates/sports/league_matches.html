@@ -19,7 +19,7 @@
             </div>
             <div class="match-details">
                 <a href="{% url 'match_detail' match.slug %}">
-                    watch now >
+                    <button>watch now ></button>
                     {{ match.match_date|date:"H:i" }}
                 </a>
                 {% if match.status == 'Live' %}
